@@ -4,6 +4,10 @@
 
   .intro {
 
+    img {
+      border-radius: 4px;
+    }
+    
     h2 {
       padding: 15px;
     }
@@ -57,7 +61,14 @@
         margin-bottom: 26px;
       }
 
-      .btn {
+      .btn button{
+        .btn-format(@btn-bg-color, @main-bg, @btn-width, @btn-height);
+          
+
+        &:hover {
+          .btn-format(@main-bg, @btn-bg-color, @btn-width, @btn-height);
+          
+        }
       }
     }
 
