@@ -1,1 +1,28 @@
 // Navigation code here
+.navigation-bar h1 {
+  padding:1%;
+  margin:auto;
+  text-align: center;
+}
+
+.navigation {
+    .flex-default();
+    background-color: @nav-bg;
+    border: 1px solid @nav-border;
+
+    nav {
+        width: 50%;
+        .flex-default();
+        padding-bottom:1%;
+        
+        a {
+            .link-format();
+        }
+
+        @media @phone {
+            width: 100%;
+        }
+    }
+ 
+
+}

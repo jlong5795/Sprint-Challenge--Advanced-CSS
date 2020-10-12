@@ -1,1 +1,25 @@
 // Mixins Here
+
+.flex-default(){
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.link-format() {
+    color: @nav-font;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.btn-format(@btn-bg-color, @main-bg, @btn-width, @btn-height){
+    background-color: @btn-bg-color;
+    color: @main-bg;
+    width: @btn-width;
+    height: @btn-height;
+    font-size: 2rem;
+    margin: 0 10px 20px;
+    border-radius: 15px;
+    margin:auto;
+};
+         
